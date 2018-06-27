@@ -2,12 +2,12 @@ package br.com.globalhitss.claro.web.dto;
 
 import java.time.LocalDate;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import lombok.Getter;
 import lombok.Setter;
 
-public class CreateCellPhoneRequest {
+public class CellPhoneResumeDto {
+	@Getter @Setter
+	private String code;
 	
 	@Getter @Setter
 	private String model;
@@ -21,7 +21,6 @@ public class CreateCellPhoneRequest {
 	@Getter @Setter
 	private String photo;
 	
-	@DateTimeFormat(pattern ="dd/MM/yyyy")
 	@Getter @Setter
 	private LocalDate date;
 }
