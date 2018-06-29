@@ -1,0 +1,22 @@
+server:
+  port: 8081
+  
+spring:
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: claro
+   
+  redis:
+    host: localhost
+    port: 6379
+      
+  datasource:
+    url: jdbc:h2:file:~/security;
+ 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
