@@ -33,3 +33,6 @@ services:
       API_IP: claro-api
     depends_on:
       - claro-api
+      
+      
+      teste
